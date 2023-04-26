@@ -1,3 +1,5 @@
+#This code reads video files and splits it into frames snapshots and use image recognition model to extract details, store in csv file and postgreSql
+
 #for batch processing model
 import cv2
 import tensorflow as tf
@@ -66,4 +68,3 @@ with conn.cursor() as cur:
 conn.commit()
 conn.close()
 
-#for realtime processing model
